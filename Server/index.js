@@ -16,7 +16,8 @@ const server = http.createServer((req,res)=>
             }
         else
         {
-            res.end("404 error page");
+            res.writeHead(200);
+            res.end("<h1> 404 error page </h1>");
         }
         
     });
